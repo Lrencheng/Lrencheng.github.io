@@ -1,0 +1,64 @@
+baseURL: "https://Lrencheng.github.io/"
+languageCode: "zh-cn"
+title: "Lrencheng"
+theme: "PaperMod"
+timeZone: "Asia/Shanghai"
+enableRobotsTXT: true
+
+pagination:
+  pagerSize: 8
+
+outputs:
+  home: ["HTML", "RSS", "JSON"]
+
+params:
+  env: production
+  description: "Research notes on robotics, spatial intelligence, and optimal control."
+  author: "Your Name"
+  defaultTheme: light
+  ShowReadingTime: true
+  ShowToc: true
+  TocOpen: true
+  ShowCodeCopyButtons: true
+  ShowPostNavLinks: true
+  ShowShareButtons: false
+  ShowBreadCrumbs: false
+  math: true
+
+menu:
+  main:
+    - name: Posts
+      url: /posts/
+      weight: 10
+    - name: Archive
+      url: /archive/
+      weight: 20
+    - name: Search
+      url: /search/
+      weight: 30
+    - name: Tags
+      url: /tags/
+      weight: 40
+    - name: About
+      url: /about/
+      weight: 60
+    - name: CV
+      url: /cv/
+      weight: 70
+
+markup:
+  goldmark:
+    extensions:
+      passthrough:
+        enable: true
+        delimiters:
+          inline:
+            - ['\(', '\)']
+            - ['$', '$']
+          block:
+            - ['\[', '\]']
+            - ['$$', '$$']
+  highlight:
+    codeFences: true
+    guessSyntax: true
+    noClasses: false

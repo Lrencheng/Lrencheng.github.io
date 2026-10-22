@@ -1,0 +1,5 @@
+/* A calm, readable layout inspired by Lil'Log, not a copy of its authored content. */
+:root { --main-width: 820px; }
+.post-content { line-height: 1.85; }
+.post-content img { display: block; margin-left: auto; margin-right: auto; }
+.post-content blockquote { font-style: normal; }
