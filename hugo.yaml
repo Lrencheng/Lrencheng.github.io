@@ -24,6 +24,14 @@ params:
   ShowShareButtons: false
   ShowBreadCrumbs: false
   math: true
+  homeInfoParams:
+    Title: "Lrencheng"
+    Content: "Research notes on robotics, spatial intelligence, and optimal control."
+  socialIcons:
+    - name: github
+      url: "https://github.com/Lrencheng"
+    - name: x
+      url: "https://x.com/LrenCheng"
 
 menu:
   main:
